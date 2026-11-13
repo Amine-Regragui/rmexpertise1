@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /private
+
+Sitemap: https://VOTRE-DOMAINE-MAROC.ma/sitemap.xml

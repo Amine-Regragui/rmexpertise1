@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr" translate="no" class="notranslate">
+  <head>
+    <meta charset="utf-8">
+    <meta name="google" content="notranslate">
+    <title>RM Expertise</title>
+    <script>
+      // GitHub Pages SPA redirect trick (https://github.com/rafgraph/spa-github-pages)
+      var segmentCount = 1; // nombre de segments du chemin de base (nom du dépôt GitHub Pages)
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
